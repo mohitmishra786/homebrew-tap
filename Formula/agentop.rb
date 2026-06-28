@@ -11,7 +11,7 @@ class Agentop < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_darwin_x86_64.tar.gz"
-      sha256 "0e646f3c5671d9700261ca1a7848254b927c775dd1b24d82c7fb59c705d6c324"
+      sha256 "29369d1533352ebcf689ffbf39b863d06ab07b389974484257d848b7646e65d8"
 
       define_method(:install) do
         bin.install "agentop"
@@ -20,7 +20,7 @@ class Agentop < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_darwin_arm64.tar.gz"
-      sha256 "f5413440f2a2a4c24640a2301a48e13bd129f28db860a4fd8bab566cc81cc6d2"
+      sha256 "3ee7768768b4e598063afbf6aca82972e1afda99260614cd95330c714eedbf80"
 
       define_method(:install) do
         bin.install "agentop"
@@ -32,7 +32,7 @@ class Agentop < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_linux_x86_64.tar.gz"
-      sha256 "1b02b15f7fb85992d12d6efaa6607bb7cce3edde56b56257b267df58a9a36d49"
+      sha256 "e37918f855833c46faa3ff378be58fa440980775a83cb9f7d01538c6773bd3fc"
       define_method(:install) do
         bin.install "agentop"
         man1.install "agentop.1"
@@ -40,7 +40,7 @@ class Agentop < Formula
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_linux_armv6.tar.gz"
-      sha256 "fe487e19b3703cdc4ecf60e829d95f7cdec780a41b0bc2878428fc0049fbdc09"
+      sha256 "0053d5d9c54b0582832a6dd7e194bbe4694d34a1ac529d1f1cf0f6aa81b8bdad"
       define_method(:install) do
         bin.install "agentop"
         man1.install "agentop.1"
@@ -48,7 +48,7 @@ class Agentop < Formula
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_linux_arm64.tar.gz"
-      sha256 "89b10c4b15e25460d378b835f5d11b8a5dd3847720843111d7cd588b43bbbc4d"
+      sha256 "44a4302a78187679065d61d81f3ee0349771b4b92409997394a2e709d6a7be5f"
       define_method(:install) do
         bin.install "agentop"
         man1.install "agentop.1"
