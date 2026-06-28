@@ -5,21 +5,21 @@
 class Mdmend < Formula
   desc "Fix Markdown lint violations across all files, instantly."
   homepage "https://github.com/mohitmishra786/mdmend"
-  version "1.0.1"
+  version "1.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.1/mdmend_1.0.1_darwin_amd64.tar.gz"
-      sha256 "ebfe75adce36b76ab1326dbe2a9660c2c66bdbcd0b897f46367271a59b6eb09c"
+      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.2/mdmend_1.0.2_darwin_amd64.tar.gz"
+      sha256 "b3cd8907b45cf5c818ea5b582d5c7bd8d6b16e841dcff411a16dbef3ea6f3105"
 
       define_method(:install) do
         bin.install "mdmend"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.1/mdmend_1.0.1_darwin_arm64.tar.gz"
-      sha256 "96225c8fd380ebb92f6db1a8c3231e019c2c75723fb04022be98605463f0c1f7"
+      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.2/mdmend_1.0.2_darwin_arm64.tar.gz"
+      sha256 "1fb29e0de779d4c4e4ba5a5e37bac87c35c9df83c21145e3e1f59cb6d4793909"
 
       define_method(:install) do
         bin.install "mdmend"
@@ -29,15 +29,15 @@ class Mdmend < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.1/mdmend_1.0.1_linux_amd64.tar.gz"
-      sha256 "18f466b13d9f4c4e928952c357ee1dc7149fc954d808fe9c44feb425b675e8e0"
+      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.2/mdmend_1.0.2_linux_amd64.tar.gz"
+      sha256 "2b7ac79bf77a390ea2dde3fcb5d6b8511e0e5dc83a60e747e2b2d7ec371a3563"
       define_method(:install) do
         bin.install "mdmend"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.1/mdmend_1.0.1_linux_arm64.tar.gz"
-      sha256 "ba798e4a77b087bfc612372671501f0bdb17a8b974ee01ab3624f86b8a602635"
+      url "https://github.com/mohitmishra786/mdmend/releases/download/v1.0.2/mdmend_1.0.2_linux_arm64.tar.gz"
+      sha256 "96a31280ff2852317b0c5e5c458724de5f26ee125551375e30c20f37e517b7e7"
       define_method(:install) do
         bin.install "mdmend"
       end
