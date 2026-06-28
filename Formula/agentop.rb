@@ -5,13 +5,13 @@
 class Agentop < Formula
   desc "Terminal dashboard for AI coding assistant sessions — token usage, cost, and cache efficiency"
   homepage "https://github.com/mohitmishra786/agentop"
-  version "1.0.0"
+  version "1.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_darwin_x86_64.tar.gz"
-      sha256 "29369d1533352ebcf689ffbf39b863d06ab07b389974484257d848b7646e65d8"
+      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.1/agentop_1.0.1_darwin_x86_64.tar.gz"
+      sha256 "61ce6b616d9cdf858dc4f8136d1de6f59cf493051317d695f17445a2cadd0202"
 
       define_method(:install) do
         bin.install "agentop"
@@ -19,8 +19,8 @@ class Agentop < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_darwin_arm64.tar.gz"
-      sha256 "3ee7768768b4e598063afbf6aca82972e1afda99260614cd95330c714eedbf80"
+      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.1/agentop_1.0.1_darwin_arm64.tar.gz"
+      sha256 "4d3b81f83360b1d696f02dce06ceb327bed64a75668150ce2815674feeb5af59"
 
       define_method(:install) do
         bin.install "agentop"
@@ -31,24 +31,24 @@ class Agentop < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_linux_x86_64.tar.gz"
-      sha256 "e37918f855833c46faa3ff378be58fa440980775a83cb9f7d01538c6773bd3fc"
+      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.1/agentop_1.0.1_linux_x86_64.tar.gz"
+      sha256 "1940698322c8401c19260e08311751a385417319e90676ade9021f1a6b3386a3"
       define_method(:install) do
         bin.install "agentop"
         man1.install "agentop.1"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_linux_armv6.tar.gz"
-      sha256 "0053d5d9c54b0582832a6dd7e194bbe4694d34a1ac529d1f1cf0f6aa81b8bdad"
+      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.1/agentop_1.0.1_linux_armv6.tar.gz"
+      sha256 "bcf999720b0770d6e3feb087fb52f8cdaede3c75dc454cad84d1ba704ef5e841"
       define_method(:install) do
         bin.install "agentop"
         man1.install "agentop.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.0/agentop_1.0.0_linux_arm64.tar.gz"
-      sha256 "44a4302a78187679065d61d81f3ee0349771b4b92409997394a2e709d6a7be5f"
+      url "https://github.com/mohitmishra786/agentop/releases/download/v1.0.1/agentop_1.0.1_linux_arm64.tar.gz"
+      sha256 "67a0d1d744909b8a726b7c44c46f3f88ec918d2ca45a0d3994283a0b5eda6ac7"
       define_method(:install) do
         bin.install "agentop"
         man1.install "agentop.1"
